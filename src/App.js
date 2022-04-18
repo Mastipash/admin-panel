@@ -35,7 +35,7 @@ function App() {
                 type="text"
                 id="input-incorrect"
                 placeholder="Введите"
-                value="06.12.2021"
+                defaultValue="06.12.2021"
               />
               <button className="input__button">
                 <svg
@@ -61,9 +61,9 @@ function App() {
                 type="text"
                 id="input-disabled"
                 placeholder="Введите"
-                value="06.12.2021"
+                defaultValue="06.12.2021"
               />
-              <div className="input__button input__button_disabled">
+              <div className="input__button">
                 <svg
                   className="input__icon"
                   viewBox="0 0 16 16"
@@ -72,8 +72,8 @@ function App() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M4 5C4 2.79086 5.79086 1 8 1C10.2091 1 12 2.79086 12 5V7C13.1046 7 14 7.89543 14 9V13C14 14.1046 13.1046 15 12 15H4C2.89543 15 2 14.1046 2 13V9C2 7.89543 2.89543 7 4 7V5ZM10 5V7H6V5C6 3.89543 6.89543 3 8 3C9.10457 3 10 3.89543 10 5Z"
                     stroke="none"
                   />
@@ -125,7 +125,7 @@ function App() {
               className="search__input"
               type="text"
               placeholder="Номер заказа или ФИО"
-              value="50744"
+              defaultValue="50744"
             />
             <button className="search__button">
               <svg
@@ -149,7 +149,7 @@ function App() {
           </div>
           <div className="checkbox">
             <input
-              checked
+              defaultChecked
               className="checkbox__item"
               type="checkbox"
               id="checkbox-2"
@@ -170,7 +170,7 @@ function App() {
           <div className="radio">
             <input
               className="radio__item"
-              checked
+              defaultChecked
               type="radio"
               name="radio-button"
               id="radio-2"
@@ -194,12 +194,12 @@ function App() {
                   <path
                     d="M2 3.5H3.5M14 3.5H12.5M5.5 3.5H10.5M5.5 3.5V2.5C5.5 1.94772 5.94772 1.5 6.5 1.5H9.5C10.0523 1.5 10.5 1.94772 10.5 2.5V3.5M5.5 3.5H3.5M10.5 3.5H12.5M3.5 3.5V13.5C3.5 14.0523 3.94772 14.5 4.5 14.5H11.5C12.0523 14.5 12.5 14.0523 12.5 13.5V3.5"
                     fill="none"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                   <path
                     d="M6.5 6V12M9.5 6V12"
                     fill="none"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                 </svg>
                 <span className="button__text">Text here</span>
@@ -218,12 +218,12 @@ function App() {
                   <path
                     d="M2 3.5H3.5M14 3.5H12.5M5.5 3.5H10.5M5.5 3.5V2.5C5.5 1.94772 5.94772 1.5 6.5 1.5H9.5C10.0523 1.5 10.5 1.94772 10.5 2.5V3.5M5.5 3.5H3.5M10.5 3.5H12.5M3.5 3.5V13.5C3.5 14.0523 3.94772 14.5 4.5 14.5H11.5C12.0523 14.5 12.5 14.0523 12.5 13.5V3.5"
                     fill="none"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                   <path
                     d="M6.5 6V12M9.5 6V12"
                     fill="none"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                 </svg>
               </button>
@@ -240,12 +240,12 @@ function App() {
                   <path
                     d="M2 3.5H3.5M14 3.5H12.5M5.5 3.5H10.5M5.5 3.5V2.5C5.5 1.94772 5.94772 1.5 6.5 1.5H9.5C10.0523 1.5 10.5 1.94772 10.5 2.5V3.5M5.5 3.5H3.5M10.5 3.5H12.5M3.5 3.5V13.5C3.5 14.0523 3.94772 14.5 4.5 14.5H11.5C12.0523 14.5 12.5 14.0523 12.5 13.5V3.5"
                     fill="none"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                   <path
                     d="M6.5 6V12M9.5 6V12"
                     fill="none"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                 </svg>
                 <span className="button__text">Text here</span>
@@ -264,12 +264,12 @@ function App() {
                   <path
                     d="M2 3.5H3.5M14 3.5H12.5M5.5 3.5H10.5M5.5 3.5V2.5C5.5 1.94772 5.94772 1.5 6.5 1.5H9.5C10.0523 1.5 10.5 1.94772 10.5 2.5V3.5M5.5 3.5H3.5M10.5 3.5H12.5M3.5 3.5V13.5C3.5 14.0523 3.94772 14.5 4.5 14.5H11.5C12.0523 14.5 12.5 14.0523 12.5 13.5V3.5"
                     fill="none"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                   <path
                     d="M6.5 6V12M9.5 6V12"
                     fill="none"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                 </svg>
               </button>
@@ -286,12 +286,12 @@ function App() {
                   <path
                     d="M2 3.5H3.5M14 3.5H12.5M5.5 3.5H10.5M5.5 3.5V2.5C5.5 1.94772 5.94772 1.5 6.5 1.5H9.5C10.0523 1.5 10.5 1.94772 10.5 2.5V3.5M5.5 3.5H3.5M10.5 3.5H12.5M3.5 3.5V13.5C3.5 14.0523 3.94772 14.5 4.5 14.5H11.5C12.0523 14.5 12.5 14.0523 12.5 13.5V3.5"
                     fill="none"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                   <path
                     d="M6.5 6V12M9.5 6V12"
                     fill="none"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                 </svg>
                 <span className="button__text">Text here</span>
@@ -308,12 +308,12 @@ function App() {
                   <path
                     d="M2 3.5H3.5M14 3.5H12.5M5.5 3.5H10.5M5.5 3.5V2.5C5.5 1.94772 5.94772 1.5 6.5 1.5H9.5C10.0523 1.5 10.5 1.94772 10.5 2.5V3.5M5.5 3.5H3.5M10.5 3.5H12.5M3.5 3.5V13.5C3.5 14.0523 3.94772 14.5 4.5 14.5H11.5C12.0523 14.5 12.5 14.0523 12.5 13.5V3.5"
                     fill="none"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                   <path
                     d="M6.5 6V12M9.5 6V12"
                     fill="none"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                 </svg>
               </button>
@@ -328,12 +328,12 @@ function App() {
                   <path
                     d="M2 3.5H3.5M14 3.5H12.5M5.5 3.5H10.5M5.5 3.5V2.5C5.5 1.94772 5.94772 1.5 6.5 1.5H9.5C10.0523 1.5 10.5 1.94772 10.5 2.5V3.5M5.5 3.5H3.5M10.5 3.5H12.5M3.5 3.5V13.5C3.5 14.0523 3.94772 14.5 4.5 14.5H11.5C12.0523 14.5 12.5 14.0523 12.5 13.5V3.5"
                     fill="none"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                   <path
                     d="M6.5 6V12M9.5 6V12"
                     fill="none"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                 </svg>
                 <span className="button__text">Text here</span>
@@ -350,12 +350,12 @@ function App() {
                   <path
                     d="M2 3.5H3.5M14 3.5H12.5M5.5 3.5H10.5M5.5 3.5V2.5C5.5 1.94772 5.94772 1.5 6.5 1.5H9.5C10.0523 1.5 10.5 1.94772 10.5 2.5V3.5M5.5 3.5H3.5M10.5 3.5H12.5M3.5 3.5V13.5C3.5 14.0523 3.94772 14.5 4.5 14.5H11.5C12.0523 14.5 12.5 14.0523 12.5 13.5V3.5"
                     fill="none"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                   <path
                     d="M6.5 6V12M9.5 6V12"
                     fill="none"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                 </svg>
               </button>
@@ -372,12 +372,12 @@ function App() {
                   <path
                     d="M2 3.5H3.5M14 3.5H12.5M5.5 3.5H10.5M5.5 3.5V2.5C5.5 1.94772 5.94772 1.5 6.5 1.5H9.5C10.0523 1.5 10.5 1.94772 10.5 2.5V3.5M5.5 3.5H3.5M10.5 3.5H12.5M3.5 3.5V13.5C3.5 14.0523 3.94772 14.5 4.5 14.5H11.5C12.0523 14.5 12.5 14.0523 12.5 13.5V3.5"
                     fill="none"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                   <path
                     d="M6.5 6V12M9.5 6V12"
                     fill="none"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                 </svg>
                 <span className="button__text">Text here</span>
@@ -394,12 +394,12 @@ function App() {
                   <path
                     d="M2 3.5H3.5M14 3.5H12.5M5.5 3.5H10.5M5.5 3.5V2.5C5.5 1.94772 5.94772 1.5 6.5 1.5H9.5C10.0523 1.5 10.5 1.94772 10.5 2.5V3.5M5.5 3.5H3.5M10.5 3.5H12.5M3.5 3.5V13.5C3.5 14.0523 3.94772 14.5 4.5 14.5H11.5C12.0523 14.5 12.5 14.0523 12.5 13.5V3.5"
                     fill="none"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                   <path
                     d="M6.5 6V12M9.5 6V12"
                     fill="none"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                   />
                 </svg>
               </button>
@@ -410,14 +410,14 @@ function App() {
       <div className="wrapper">
         <div className="dropdown-group">
           <div className="dropdown-group__row">
-            <div className="dropdown-block">
+            <div className="dropdown-block dropdown-block-list">
               <div className="checkbox dropdown-block__checkbox">
                 <input
                   className="checkbox__item"
                   type="checkbox"
                   id="new-check"
                 />
-                <label className="checkbox__label" htmlFor="new_check">
+                <label className="checkbox__label" htmlFor="new-check">
                   Новый
                 </label>
               </div>
@@ -425,7 +425,7 @@ function App() {
                 <input
                   className="checkbox__item"
                   type="checkbox"
-                  id="calc_check"
+                  id="calc-check"
                 />
                 <label className="checkbox__label" htmlFor="calc-check">
                   Расчет
@@ -434,9 +434,9 @@ function App() {
               <div className="checkbox dropdown-block__checkbox">
                 <input
                   className="checkbox__item"
-                  checked
                   type="checkbox"
                   id="confirmed-check"
+                  defaultChecked
                 />
                 <label className="checkbox__label" htmlFor="confirmed-check">
                   Подтвержден
@@ -473,7 +473,7 @@ function App() {
                 </label>
               </div>
             </div>
-            <div className="dropdown-block">
+            <div className="dropdown-block dropdown-block-list">
               <div className="radio dropdown-block__radio">
                 <input
                   className="radio__item-none"
@@ -493,7 +493,7 @@ function App() {
                   id="calc-radio"
                 />
                 <label className="radio__label-none" htmlFor="calc-radio">
-                  Рассчет
+                  Расчет
                 </label>
               </div>
               <div className="radio dropdown-block__radio">
@@ -502,7 +502,7 @@ function App() {
                   type="radio"
                   name="radio-btn"
                   id="confirmed-radio"
-                  checked
+                  defaultChecked
                 />
                 <label className="radio__label-none" htmlFor="confirmed-radio">
                   Подтвержден

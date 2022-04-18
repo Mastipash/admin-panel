@@ -18,6 +18,9 @@
   padding: 1rem;
   font-size: 13px;
 }
+.dropdown-block-list {
+  padding: 0.5rem 0;
+}
 .dropdown-block__checkbox {
   width: 100%;
   height: 2rem;
@@ -54,10 +57,11 @@
 }
 .button-label {
   margin-bottom: 0.5rem;
+  line-height: 1rem;
 }
-.button_color_secondary {
+/* .button_color_secondary {
   fill: #459df5;
 }
 .button_color_primary {
   fill: #fff;
-}
+} */

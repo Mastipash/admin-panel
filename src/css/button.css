@@ -30,17 +30,20 @@
   color: #fff;
   background: #459df5;
   stroke: #fff;
+  fill: #fff;
 }
 .button_color_secondary {
   color: #459df5;
   background: transparent;
   stroke: #459df5;
+  fill: #459df5;
 }
 .button_color_tertiary {
   cursor: unset;
   color: #000;
   background: transparent;
   stroke: #000;
+  fill: #fff;
 }
 .button__icon {
   width: 1rem;

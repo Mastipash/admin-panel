@@ -26,9 +26,9 @@
   border-radius: 0.25rem;
   padding: 0.5rem 0.25rem 0.5rem 0.5rem;
 }
-.input__area:focus {
+.input__area:focus-within {
   box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.2);
-  border: 1px solid #459df5;
+  border: 1px solid #2770ba;
 }
 .input__field {
   width: 90%;
@@ -56,7 +56,8 @@
 .input__area_disabled {
   background: #bad8f5;
   cursor: unset;
+  color: black;
 }
-.input__button_disabled {
+.input__area_disabled .input__button {
   cursor: auto;
 }
