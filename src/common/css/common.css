@@ -5,7 +5,7 @@ body {
   font-size: 16px;
   font-family: 'Ubuntu', sans-serif;
   color: #000;
-  line-height: 1.5rem;
+  line-height: 1rem;
 }
 .components {
   height: 100%;
@@ -17,9 +17,4 @@ body {
   justify-content: start;
   align-items: flex-start;
   gap: 2rem;
-}
-.wrapper {
-  border: 2px dashed #8055ff;
-  border-radius: 5px;
-  padding: 3rem;
 }

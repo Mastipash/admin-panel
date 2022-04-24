@@ -1,0 +1,8 @@
+.item {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.item + .label::before {
+  border-radius: 50%;
+}

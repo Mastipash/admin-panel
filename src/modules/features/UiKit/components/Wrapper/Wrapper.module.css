@@ -1,0 +1,8 @@
+._ {
+  border: 2px dashed #8055ff;
+  border-radius: 5px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

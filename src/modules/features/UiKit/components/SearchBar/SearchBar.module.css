@@ -1,0 +1,8 @@
+._ {
+  width: 16rem;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  gap: 2rem;
+}

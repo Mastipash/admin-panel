@@ -17,9 +17,11 @@
   border-radius: 0.5rem;
   padding: 1rem;
   font-size: 13px;
+  gap: 0.5rem;
 }
 .dropdown-block-list {
   padding: 0.5rem 0;
+  gap: 0;
 }
 .dropdown-block__checkbox {
   width: 100%;
@@ -46,22 +48,11 @@
 .radio__item-none:checked + .radio__label-none {
   color: #459df5;
 }
-.dropdown-block__button {
+.dropdown-block .button {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 0.5rem;
 }
-.dropdown-block__button:last-child {
-  margin-bottom: 0;
-}
-.button-label {
-  margin-bottom: 0.5rem;
+.text {
   line-height: 1rem;
 }
-/* .button_color_secondary {
-  fill: #459df5;
-}
-.button_color_primary {
-  fill: #fff;
-} */

@@ -1,149 +1,33 @@
-import './App.css'
-import './css/reset.css'
-import './css/common.css'
-import './css/input.css'
-import './css/search-bar.css'
+import { Wrapper, InputForm, SearchBar } from './modules/features/UiKit/'
+import { InputWithLabel } from './common/components/InputWithLabel/InputWithLabel'
+import { ReactComponent as IconMoon } from './common/icons/moon.svg'
+import { ReactComponent as IconSun } from './common/icons/sun.svg'
+import { Checkbox } from './common/components/Checkbox/Checkbox'
+// import { Radio } from './common/components/Radio/Radio';
+// import { Checkbox } from './common/components/Checkbox/Checkbox';
+import { ButtonGroup } from './modules/features/UiKit/components/ButtonGroup/ButtonGroup'
+import { Button } from './common/components/Button/Button'
+import '../src/common/css/reset.css'
+import '../src/common/css/common.css'
 import './css/button.css'
 import './css/checkbox-radio.css'
 import './css/dropdown.css'
+import { DropdownBlock } from './modules/features/UiKit/components/DropdownBlock/DropdownBlock'
 
 function App() {
   return (
     <div className="components">
-      <div className="wrapper">
-        <div className="input-form">
-          <div className="input input-form__input">
-            <label className="input__label" htmlFor="input-empty">
-              Дата и время заказа
-            </label>
-            <div className="input__area">
-              <input
-                className="input__field"
-                type="text"
-                id="input-empty"
-                placeholder="Введите"
-              />
-            </div>
-          </div>
-          <div className="input input-form__input">
-            <label className="input__label" htmlFor="input-incorrect">
-              Дата и время заказа
-            </label>
-            <div className="input__area input__area_incorrect">
-              <input
-                className="input__field"
-                type="text"
-                id="input-incorrect"
-                placeholder="Введите"
-                defaultValue="06.12.2021"
-              />
-              <button className="input__button">
-                <svg
-                  className="input__icon"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  stroke="#BAD8F5"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5" fill="none" />
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div className="input input-form__input">
-            <label className="input__label" htmlFor="input-disabled">
-              Дата и время заказа
-            </label>
-            <div className="input__area input__area_disabled">
-              <input
-                disabled
-                className="input__field"
-                type="text"
-                id="input-disabled"
-                placeholder="Введите"
-                defaultValue="06.12.2021"
-              />
-              <div className="input__button">
-                <svg
-                  className="input__icon"
-                  viewBox="0 0 16 16"
-                  fill="#000"
-                  stroke="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M4 5C4 2.79086 5.79086 1 8 1C10.2091 1 12 2.79086 12 5V7C13.1046 7 14 7.89543 14 9V13C14 14.1046 13.1046 15 12 15H4C2.89543 15 2 14.1046 2 13V9C2 7.89543 2.89543 7 4 7V5ZM10 5V7H6V5C6 3.89543 6.89543 3 8 3C9.10457 3 10 3.89543 10 5Z"
-                    stroke="none"
-                  />
-                  <path
-                    d="M12 5C12 2.8 10.2 1 8 1C5.8 1 4 2.8 4 5L4 9H6V5C6 3.75 7 3 8 3C9 3 10 3.75 10 5V9H12V5Z"
-                    stroke="none"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="wrapper">
-        <div className="search-bar">
-          <div className="search search-bar__search">
-            <svg
-              className="search__icon"
-              viewBox="0 0 16 16"
-              fill="none"
-              stroke="#459DF5"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M10.0355 10.0355C11.9882 8.08291 11.9882 4.91709 10.0355 2.96447C8.08291 1.01184 4.91709 1.01184 2.96447 2.96447C1.01184 4.91709 1.01184 8.08291 2.96447 10.0355C4.91709 11.9882 8.08291 11.9882 10.0355 10.0355ZM10.0355 10.0355L14 14M14 14L14.5 13.5L11.5 10.5M14 14L13.5 14.5L10.5 11.5"
-                fill="none"
-              />
-            </svg>
-            <input
-              className="search__input"
-              type="text"
-              placeholder="Номер заказа или ФИО"
-            />
-          </div>
-          <div className="search search-bar__search search_fill">
-            <svg
-              className="search__icon"
-              viewBox="0 0 16 16"
-              fill="none"
-              stroke="#459DF5"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M10.0355 10.0355C11.9882 8.08291 11.9882 4.91709 10.0355 2.96447C8.08291 1.01184 4.91709 1.01184 2.96447 2.96447C1.01184 4.91709 1.01184 8.08291 2.96447 10.0355C4.91709 11.9882 8.08291 11.9882 10.0355 10.0355ZM10.0355 10.0355L14 14M14 14L14.5 13.5L11.5 10.5M14 14L13.5 14.5L10.5 11.5"
-                fill="none"
-              />
-            </svg>
-            <input
-              className="search__input"
-              type="text"
-              placeholder="Номер заказа или ФИО"
-              defaultValue="50744"
-            />
-            <button className="search__button">
-              <svg
-                className="search__button-icon"
-                viewBox="0 0 16 16"
-                fill="none"
-                stroke="#BAD8F5"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5" fill="none" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div className="wrapper wrapper__checkbox-radio">
+      <Wrapper>
+        <InputForm />
+      </Wrapper>
+      <Wrapper>
+        <SearchBar />
+      </Wrapper>
+      <Wrapper>
         <div className="item-group">
-          <div className="checkbox">
+          <Checkbox />
+          <Checkbox checked />
+          {/* <div className="checkbox">
             <input className="checkbox__item" type="checkbox" id="checkbox-1" />
             <label className="checkbox__label" htmlFor="checkbox-1"></label>
           </div>
@@ -155,10 +39,10 @@ function App() {
               id="checkbox-2"
             />
             <label className="checkbox__label" htmlFor="checkbox-2"></label>
-          </div>
+          </div> */}
         </div>
         <div className="item-group">
-          <div className="radio">
+          {/* <div className="radio">
             <input
               className="radio__item"
               type="radio"
@@ -176,238 +60,13 @@ function App() {
               id="radio-2"
             />
             <label className="radio__label" htmlFor="radio-2"></label>
-          </div>
+          </div> */}
         </div>
-      </div>
-      <div className="wrapper">
-        <div className="button-group">
-          <div className="button-group__column">
-            <div className="button-group__section">
-              <button className="button button_color_primary button_size_large button-section__button">
-                <svg
-                  className="button__icon"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  stroke="#FFF"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 3.5H3.5M14 3.5H12.5M5.5 3.5H10.5M5.5 3.5V2.5C5.5 1.94772 5.94772 1.5 6.5 1.5H9.5C10.0523 1.5 10.5 1.94772 10.5 2.5V3.5M5.5 3.5H3.5M10.5 3.5H12.5M3.5 3.5V13.5C3.5 14.0523 3.94772 14.5 4.5 14.5H11.5C12.0523 14.5 12.5 14.0523 12.5 13.5V3.5"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M6.5 6V12M9.5 6V12"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                </svg>
-                <span className="button__text">Text here</span>
-              </button>
-              <button className="button button_color_primary button_size_large button-section__button">
-                <span className="button__text">Text here</span>
-              </button>
-              <button className="button button_color_primary button_size_large-icon button-section__button">
-                <svg
-                  className="button__icon"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  stroke="#FFF"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 3.5H3.5M14 3.5H12.5M5.5 3.5H10.5M5.5 3.5V2.5C5.5 1.94772 5.94772 1.5 6.5 1.5H9.5C10.0523 1.5 10.5 1.94772 10.5 2.5V3.5M5.5 3.5H3.5M10.5 3.5H12.5M3.5 3.5V13.5C3.5 14.0523 3.94772 14.5 4.5 14.5H11.5C12.0523 14.5 12.5 14.0523 12.5 13.5V3.5"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M6.5 6V12M9.5 6V12"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div className="button-group__section">
-              <button className="button button_color_primary button_size_medium button-section__button">
-                <svg
-                  className="button__icon"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  stroke="#FFF"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 3.5H3.5M14 3.5H12.5M5.5 3.5H10.5M5.5 3.5V2.5C5.5 1.94772 5.94772 1.5 6.5 1.5H9.5C10.0523 1.5 10.5 1.94772 10.5 2.5V3.5M5.5 3.5H3.5M10.5 3.5H12.5M3.5 3.5V13.5C3.5 14.0523 3.94772 14.5 4.5 14.5H11.5C12.0523 14.5 12.5 14.0523 12.5 13.5V3.5"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M6.5 6V12M9.5 6V12"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                </svg>
-                <span className="button__text">Text here</span>
-              </button>
-              <button className="button button_color_primary button_size_medium button-section__button">
-                <span className="button__text">Text here</span>
-              </button>
-              <button className="button button_color_primary button_size_medium-icon button-section__button">
-                <svg
-                  className="button__icon"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  stroke="#FFF"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 3.5H3.5M14 3.5H12.5M5.5 3.5H10.5M5.5 3.5V2.5C5.5 1.94772 5.94772 1.5 6.5 1.5H9.5C10.0523 1.5 10.5 1.94772 10.5 2.5V3.5M5.5 3.5H3.5M10.5 3.5H12.5M3.5 3.5V13.5C3.5 14.0523 3.94772 14.5 4.5 14.5H11.5C12.0523 14.5 12.5 14.0523 12.5 13.5V3.5"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M6.5 6V12M9.5 6V12"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div className="button-group__column">
-            <div className="button-group__section">
-              <button className="button button_color_secondary button_size_large button-section__button">
-                <svg
-                  className="button__icon"
-                  viewBox="0 0 16 16"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 3.5H3.5M14 3.5H12.5M5.5 3.5H10.5M5.5 3.5V2.5C5.5 1.94772 5.94772 1.5 6.5 1.5H9.5C10.0523 1.5 10.5 1.94772 10.5 2.5V3.5M5.5 3.5H3.5M10.5 3.5H12.5M3.5 3.5V13.5C3.5 14.0523 3.94772 14.5 4.5 14.5H11.5C12.0523 14.5 12.5 14.0523 12.5 13.5V3.5"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M6.5 6V12M9.5 6V12"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                </svg>
-                <span className="button__text">Text here</span>
-              </button>
-              <button className="button button_color_secondary button_size_large button-section__button">
-                <span className="button__text">Text here</span>
-              </button>
-              <button className="button button_color_secondary button_size_large-icon button-section__button">
-                <svg
-                  className="button__icon"
-                  viewBox="0 0 16 16"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 3.5H3.5M14 3.5H12.5M5.5 3.5H10.5M5.5 3.5V2.5C5.5 1.94772 5.94772 1.5 6.5 1.5H9.5C10.0523 1.5 10.5 1.94772 10.5 2.5V3.5M5.5 3.5H3.5M10.5 3.5H12.5M3.5 3.5V13.5C3.5 14.0523 3.94772 14.5 4.5 14.5H11.5C12.0523 14.5 12.5 14.0523 12.5 13.5V3.5"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M6.5 6V12M9.5 6V12"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div className="button-group__section">
-              <button className="button button_color_secondary button_size_medium button-section__button">
-                <svg
-                  className="button__icon"
-                  viewBox="0 0 16 16"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 3.5H3.5M14 3.5H12.5M5.5 3.5H10.5M5.5 3.5V2.5C5.5 1.94772 5.94772 1.5 6.5 1.5H9.5C10.0523 1.5 10.5 1.94772 10.5 2.5V3.5M5.5 3.5H3.5M10.5 3.5H12.5M3.5 3.5V13.5C3.5 14.0523 3.94772 14.5 4.5 14.5H11.5C12.0523 14.5 12.5 14.0523 12.5 13.5V3.5"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M6.5 6V12M9.5 6V12"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                </svg>
-                <span className="button__text">Text here</span>
-              </button>
-              <button className="button button_color_secondary button_size_medium button-section__button">
-                <span className="button__text">Text here</span>
-              </button>
-              <button className="button button_color_secondary button_size_medium-icon button-section__button">
-                <svg
-                  className="button__icon"
-                  viewBox="0 0 16 16"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 3.5H3.5M14 3.5H12.5M5.5 3.5H10.5M5.5 3.5V2.5C5.5 1.94772 5.94772 1.5 6.5 1.5H9.5C10.0523 1.5 10.5 1.94772 10.5 2.5V3.5M5.5 3.5H3.5M10.5 3.5H12.5M3.5 3.5V13.5C3.5 14.0523 3.94772 14.5 4.5 14.5H11.5C12.0523 14.5 12.5 14.0523 12.5 13.5V3.5"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M6.5 6V12M9.5 6V12"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div className="button-group__column">
-            <div className="button-group__section">
-              <button className="button button_color_tertiary button_size_large button-section__button">
-                <svg
-                  className="button__icon"
-                  viewBox="0 0 16 16"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 3.5H3.5M14 3.5H12.5M5.5 3.5H10.5M5.5 3.5V2.5C5.5 1.94772 5.94772 1.5 6.5 1.5H9.5C10.0523 1.5 10.5 1.94772 10.5 2.5V3.5M5.5 3.5H3.5M10.5 3.5H12.5M3.5 3.5V13.5C3.5 14.0523 3.94772 14.5 4.5 14.5H11.5C12.0523 14.5 12.5 14.0523 12.5 13.5V3.5"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M6.5 6V12M9.5 6V12"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                </svg>
-                <span className="button__text">Text here</span>
-              </button>
-              <button className="button button_color_tertiary button_size_large button-section__button">
-                <span className="button__text">Text here</span>
-              </button>
-              <button className="button button_color_tertiary button_size_large-icon button-section__button">
-                <svg
-                  className="button__icon"
-                  viewBox="0 0 16 16"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 3.5H3.5M14 3.5H12.5M5.5 3.5H10.5M5.5 3.5V2.5C5.5 1.94772 5.94772 1.5 6.5 1.5H9.5C10.0523 1.5 10.5 1.94772 10.5 2.5V3.5M5.5 3.5H3.5M10.5 3.5H12.5M3.5 3.5V13.5C3.5 14.0523 3.94772 14.5 4.5 14.5H11.5C12.0523 14.5 12.5 14.0523 12.5 13.5V3.5"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M6.5 6V12M9.5 6V12"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="wrapper">
+      </Wrapper>
+      <Wrapper>
+        <ButtonGroup />
+      </Wrapper>
+      <Wrapper>
         <div className="dropdown-group">
           <div className="dropdown-group__row">
             <div className="dropdown-block dropdown-block-list">
@@ -544,33 +203,38 @@ function App() {
             </div>
           </div>
           <div className="dropdown-group__row">
-            <div className="dropdown-block">
-              <div className="input">
-                <label className="input__label" htmlFor="input-empty">
-                  Номер страницы
-                </label>
-                <div className="input__area">
-                  <input
-                    className="input__field"
-                    type="text"
-                    id="input-empty"
-                    placeholder="Введите номер"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="dropdown-block">
-              <label className="button-label">Удалить n записей?</label>
-              <button className="button button_color_secondary button_size_medium button_full-width dropdown-block__button">
+            <DropdownBlock>
+              <InputWithLabel
+                label="Номер страницы"
+                placeholder="Введите номер"
+              />
+            </DropdownBlock>
+            <DropdownBlock>
+              <span className="text">Удалить n записей?</span>
+              <Button size="medium" color="secondary">
+                Удалить
+              </Button>
+              <Button size="medium" color="primary">
+                Отмена
+              </Button>
+            </DropdownBlock>
+            {/* <button className="button button_color_secondary button_size_medium button_full-width dropdown-block__button">
                 <span className="button__text">Удалить</span>
               </button>
               <button className="button button_color_primary button_size_medium button_full-width dropdown-block__button">
                 <span className="button__text">Отмена</span>
-              </button>
-            </div>
-            <div className="dropdown-block">
-              <label className="button-label">Выберите тему</label>
-              <button className="button button_color_secondary button_size_medium button_full-width dropdown-block__button">
+              </button> */}
+
+            <DropdownBlock>
+              <span className="text">Выберите тему</span>
+              <Button size="medium" color="secondary" icon={IconSun}>
+                Светлая
+              </Button>
+              <Button size="medium" color="primary" icon={IconMoon}>
+                Тёмная
+              </Button>
+            </DropdownBlock>
+            {/* <button className="button button_color_secondary button_size_medium button_full-width dropdown-block__button">
                 <svg
                   className="button__icon"
                   viewBox="0 0 16 16"
@@ -611,11 +275,10 @@ function App() {
                   />
                 </svg>
                 <span className="button__text">Темная</span>
-              </button>
-            </div>
+              </button> */}
           </div>
         </div>
-      </div>
+      </Wrapper>
     </div>
   )
 }
