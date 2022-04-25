@@ -1,0 +1,8 @@
+._ {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 16px;
+  background: #ebf0f5;
+  align-self: flex-end;
+}

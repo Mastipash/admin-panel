@@ -14,23 +14,28 @@ export const Input = ({
   incorrect,
   onClear,
   search,
+  filter,
   value,
+  onChange,
   ...props
 }) => {
-  const inputClass = cn(styles._, {
+  const inputClass = cn(styles._, className, {
     [styles.incorrect]: incorrect,
     [styles.disabled]: disabled,
     [styles.search]: search,
+    [styles.filter]: filter
   });
 
   return (
     <div className={inputClass}>
       {search && <SearchIcon className={styles.icon} />}
+      {filter && <span>{filter}</span>}
       <input
         className={styles.field}
         value={value}
         defaultValue={defaultValue}
         disabled={disabled}
+        onChange={(e) => onChange(e.target.value)}
         {...props}
       />
       {(value || defaultValue) && !disabled && (
