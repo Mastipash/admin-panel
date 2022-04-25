@@ -1,0 +1,64 @@
+._ {
+  display: flex;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  border: none;
+  line-height: 1rem;
+  padding: 0;
+  justify-content: center;
+}
+.primary {
+  color: #fff;
+  background: #459df5;
+}
+.primary:hover {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.2);
+}
+.secondary {
+  color: #459df5;
+  background: transparent;
+}
+.secondary:hover {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.2);
+}
+.tertiary {
+  cursor: unset;
+  color: #000;
+  background: transparent;
+}
+.icon {
+  width: 1rem;
+  height: 1rem;
+  fill: white;
+  stroke: white;
+}
+.text {
+  font-size: 13px;
+  line-height: 1rem;
+  display: block;
+}
+.large {
+  height: 2rem;
+  padding: 0.5rem 1rem;
+  gap: 0.5rem;
+}
+.large.onlyIcon {
+  padding: 0.5rem;
+}
+.medium {
+  height: 1.5rem;
+  padding: 0.25rem 0.5rem;
+  gap: 0.25rem;
+}
+.medium.onlyIcon {
+  padding: 0.25rem;
+}
+.secondary .icon {
+  fill: #459df5;
+  stroke: #459df5;
+}
+
+.tertiary .icon {
+  fill: black;
+  stroke: black;
+}

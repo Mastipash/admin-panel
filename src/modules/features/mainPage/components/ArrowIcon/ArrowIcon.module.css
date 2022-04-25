@@ -1,0 +1,8 @@
+._ {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.select {
+  transform: rotate(180deg);
+}

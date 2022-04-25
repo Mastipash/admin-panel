@@ -1,0 +1,17 @@
+._ {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  padding: 1rem;
+  background: #ebf0f5;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  gap: 1rem;
+}
+.input_group {
+  display: flex;
+  gap: 0.25rem;
+}
+.input {
+  width: 8.75rem;
+}

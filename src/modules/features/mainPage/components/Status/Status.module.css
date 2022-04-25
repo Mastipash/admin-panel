@@ -1,0 +1,13 @@
+._ {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.name_done {
+  color: #0fb864;
+}
+.name_disabled {
+  opacity: 0.5;
+  fill: black;
+  stroke: black;
+}

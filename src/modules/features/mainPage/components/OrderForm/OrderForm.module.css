@@ -1,0 +1,78 @@
+@keyframes show-container {
+  0% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
+}
+@keyframes hide-container {
+  0% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+  }
+}
+.overlay {
+  width: 100%;
+}
+._ {
+  display: flex;
+  flex-direction: column;
+  grid-template-rows: 56px auto 48px;
+  grid-auto-flow: row;
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow: auto;
+  width: 30rem;
+  height: 100%;
+  background: white;
+  box-shadow: 0 0 64px rgba(0, 0, 0, 0.2), 0 0 16px rgba(0, 0, 0, 0.15),
+    0 0 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  animation-duration: 450ms;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.close {
+  padding: 0;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem 1rem;
+}
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: #ebf0f5;
+}
+.sum {
+  margin-top: -2rem;
+}
+.opened {
+  animation-name: show-container;
+}
+.hidden {
+  animation-name: hide-container;
+  animation-duration: 450ms;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.error {
+  color: red;
+  margin: 0 1rem 0 0;
+}
